@@ -13,6 +13,11 @@ module.exports = {
     },
     check: function (req, res) {
         res.json(req.param("name"));
+    },
+    file: function (req, res) {
+        req.file('file').upload(function (err, uploadedFiles) {
+            console.log(req.body);
+            res.json(uploadedFiles);
+        });
     }
-
 };
