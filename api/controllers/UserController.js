@@ -10,5 +10,9 @@ module.exports = {
         User.find().then(function (user) {
             res.json(user);
         });
+    },
+    check: function (req, res) {
+        res.json(req.param("name"));
     }
+
 };
