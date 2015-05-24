@@ -6,23 +6,21 @@ var _super = require('sails-permissions/api/controllers/UserController');
 _.merge(exports, _super);
 _.merge(exports, {
 
-    // Extend with custom logic here by adding additional fields, methods, etc.
+  // Extend with custom logic here by adding additional fields, methods, etc.
 
-    /**
-     * For example:
-     *
-     * foo: function (bar) {
-     *   bar.x = 1;
-     *   bar.y = 2;
-     *   return _super.foo(bar);
-     * }
-     */
+  /**
+   * For example:
+   *
+   * foo: function (bar) {
+   *   bar.x = 1;
+   *   bar.y = 2;
+   *   return _super.foo(bar);
+   * }
+   */
 });
 
 module.exports = {
-    demo: function (req, res) {
-        res.json({
-            "name": "Chintan"
-        });
+	demo:function(req,res) {
+        res.json({"name":"Chintan"});
     }
 };

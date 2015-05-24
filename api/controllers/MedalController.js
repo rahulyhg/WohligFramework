@@ -6,6 +6,9 @@
  */
 
 module.exports = {
-	
+	hi:function(req,res) {
+        console.log("Testing");
+        res.json({"name":"Chintan"});
+    }
 };
 
