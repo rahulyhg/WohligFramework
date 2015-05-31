@@ -21,9 +21,7 @@ _.merge(exports, {
 
 
 module.exports.models = {
-
     adminEmail: "admin@example.com",
     adminUsername: "admin",
     adminPassword: "admin1234"
-
 };
